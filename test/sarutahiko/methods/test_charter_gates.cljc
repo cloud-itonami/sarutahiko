@@ -1,6 +1,6 @@
 (ns sarutahiko.methods.test-charter-gates
   "sarutahiko — constitutional-gate conformance tests. Substrate-native Clojure (ADR-2606160842); 1:1 port of pruned test_charter_gates.py."
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.lang.text] [clojure.test :refer [deftest is run-tests]]
             [cheshire.core :as json]))
 
 (def ^:private here (.getParentFile (java.io.File. ^String *file*)))
@@ -66,7 +66,7 @@
                   (letfn [(w [x] (cond (map? x) (do (when (sequential? (get x "knownValues")) (swap! acc into (get x "knownValues"))) (doseq [v (vals x)] (w v)))
                                        (sequential? x) (doseq [v x] (w v))))]
                     (w (lex "emissionsAuditRecord.json"))) @acc))]
-    (is (some #(clojure.string/includes? % "Euro 7") basis))
+    (is (some #(kotoba.lang.text/includes? % "Euro 7") basis))
     (is (= (get (consts (lex "paintAttestation.json")) "vocLimitGPerL") 100))))
 
 ;; ── G12 max road speed ≤90 km/h ──
