@@ -3,7 +3,7 @@
   `cells/electrical_integration/state_machine.py`. Harness routing → ECU flash →
   G1/N8 open-source firmware verification → diagnostics. String keys mirror the
   Python __dict__."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def phases
   {:init "init" :harness-routed "harness_routed" :ecu-flashed "ecu_flashed"

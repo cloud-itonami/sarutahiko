@@ -1,6 +1,6 @@
 (ns sarutahiko.cells.vin-attestation-binder.test-state-machine
   "sarutahiko 猿田彦 vin-attestation-binder state-machine cljc port + LIVE py↔clj deep parity."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.lang.text] [clojure.test :refer [deftest is testing]]
             [clojure.java.shell :refer [sh]]
             [cheshire.core :as json]
             [sarutahiko.cells.vin-attestation-binder.state-machine :as sm]))
@@ -25,5 +25,5 @@
                  :dir py-dir)]
       (if (not (zero? (:exit py)))
         (println "  [skip] python3 unavailable:" (:err py))
-        (is (= (json/parse-string (clojure.string/trim (:out py)))
+        (is (= (json/parse-string (kotoba.lang.text/trim (:out py)))
                (json/parse-string (json/generate-string (get (sm/run-chain {}) "vehicle_manufacture_record")))))))))
