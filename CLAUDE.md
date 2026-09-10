@@ -160,7 +160,7 @@ Terminal `vehicleManufactureRecord` (kotoba-datomic-anchored aggregate) emitted 
 ## Testing
 
 The standalone repository uses the canonical CLJC implementations and EDN
-contracts. Run the complete suite with `bb run_tests.clj`.
+contracts. Run the complete suite with `bb run_tests.kotoba`.
 
 ## Related Files
 
