@@ -153,4 +153,4 @@ only; this does NOT activate the cells above — they stay R0 `RuntimeError`):
 - `/90-docs/adr/2606013100-sarutahiko-truck-factory-full-robotics-and-loader.md` — Plant design ADR
 - `/70-tools/e7m-sim/scenes/sarutahiko-factory-r0/README.md` — Plant scene SSoT
 - `/orgs/etzhayyim/com-etzhayyim-wadachi/README.md` — Operator-side counterpart
-- `/CLAUDE.md` — Religious-corp status table row 52
+- `/AGENTS.md` — Religious-corp status table row 52
