@@ -1,4 +1,4 @@
-# com-etzhayyim-sarutahiko — CLAUDE.md
+# com-etzhayyim-sarutahiko — AGENTS.md
 
 ## Identity
 
@@ -169,4 +169,4 @@ contracts. Run the complete suite with `bb run_tests.kotoba`.
 - `/90-docs/adr/2605252500-sarutahiko-heavy-truck-manufacturing-r0.md`
 - `/orgs/etzhayyim/com-etzhayyim-wadachi/README.md` — Operator-side counterpart
 - `com-etzhayyim-kanayama` — Upstream Al/steel/Cu supply + EoL loop
-- `/CLAUDE.md` — Religious-corp status table row 52
+- `/AGENTS.md` — Religious-corp status table row 52
